@@ -54,7 +54,7 @@ void TankClient::turnOffMotors() {
     digitalWrite(M2SpeedPin,LOW);
 };
 
-float TankClient::readDistanceSensor(int sensorId) {     //Returns Distance in cm
+float TankClient::readDistanceSensor(int sensorId) {     //Returns Distance in m
     if (sensorId != 1) {
         return -1;
     };
